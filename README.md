@@ -10,7 +10,7 @@ Once the data was processed, the results were sent to the Android application vi
     * Debugging was not an option, as the algorithms existed outside the Android app's process
   * What did you do to solve it?
     * I extracted the C++ algorithm code into the main Android app compilation path via the NDK
-    * This was tricky, as I had to modify several parts of the code (mostly caused by differing standard libaries found in AOSP versus NDK)
+    * This was tricky, as I had to refactor several parts of the code that were tightly coupled or were using libraries only available in the AOSP and not the NDK
     * I saved the raw spectral data for reprocessing after the migration to the NDK to gaurantee I did not break any algorithms
   * What was the outcome?
     * Once the code was moved, we were able to debug the data processing code to find and fix bugs
@@ -42,7 +42,7 @@ Once the data was processed, the results were sent to the Android application vi
 Project consists of a Stack class, a MinStack child class, a Parentheses Validator util class, and 2 test functions
 * Simply open and run SeeEnBee.xcodeproj on your Mac via Xcode,
 * compile and run main.cpp via command line interface (e.g. GCC),
-* or run a 210 line single file version of the project here: http://tpcg.io/XKU6UQ (click the Execute button)
+* or run a 217 line single file version of the project here: http://tpcg.io/XKU6UQ (click the Execute button)
 
 ### Resume
 Hosted here:
