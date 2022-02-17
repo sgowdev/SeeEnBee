@@ -24,7 +24,15 @@ public:
     {
         Stack<int32_t>::push(val);
         
-        redetermineMinVal();
+        // Algorithmic complexity: O(1)
+        if (_data.size() == 1)
+        {
+            _minVal = val;
+        }
+        else if (val < _minVal)
+        {
+            _minVal = val;
+        }
     }
     
     virtual void pop()
@@ -40,6 +48,7 @@ public:
         // Methods pop, top and getMin operations will always be called on non-empty stacks.
         assert(hasData());
         
+        // Algorithmic complexity: O(1)
         return _minVal;
     }
     

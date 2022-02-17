@@ -66,11 +66,11 @@ public:
         return c == ')' || c == ']' || c == '}';
     }
     
-    static bool isCharParenthesesMatch(char openingParenthesesChar, char closingParenthesesChar)
+    static bool isCharParenthesesMatch(char openingParentheses, char closingParentheses)
     {
         return
-        (openingParenthesesChar == '(' && closingParenthesesChar == ')') ||
-        (openingParenthesesChar == '[' && closingParenthesesChar == ']') ||
-        (openingParenthesesChar == '{' && closingParenthesesChar == '}');
+        (openingParentheses == '(' && closingParentheses == ')') ||
+        (openingParentheses == '[' && closingParentheses == ']') ||
+        (openingParentheses == '{' && closingParentheses == '}');
     }
 };

@@ -12,7 +12,6 @@
 #include <assert.h>
 #include <stdio.h>
 
-// Coding part 1 - Min Stack
 void testMinStack()
 {
     MinStack minStack;
@@ -27,7 +26,6 @@ void testMinStack()
     printf("testMinStack successful \n");
 }
 
-// Coding part 2 - Valid Parentheses
 void testValidParentheses()
 {
     // Example 1:
@@ -50,6 +48,9 @@ void testValidParentheses()
 
 int main(int argc, const char* argv[])
 {
+    // Coding part 1 - Min Stack
     testMinStack();
+    
+    // Coding part 2 - Valid Parentheses
     testValidParentheses();
 }
